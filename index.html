@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <script src="/script.js"></script>
+</head>
+<body>
+    <div class="main-content">
+    <div class="left-width">
+        <div class="header1">
+         
+           
+            <h2>🛒Shopping Cart</h2>
+            <input type="text" placeholder="search the products..." onkeyup="searchProduct()" id="search"/>
+            <div class="products"> 
+            <div class="product" data-id="1">     
+            <img src="images/1.png" alt="chair">
+            <p class="name">Hertfoid Upholstered Chair</p>
+            <p class="price">101</p>
+            <button class="button"  onclick="addToCart('Hertfoid Upholstered Chair', 101,'images/1.png')">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2" >       
+            <img src="images/2.png" alt="chair1">
+            <p class="name">Abingdon Upholstered chair </p>
+            <p class="price">151</p>
+            <button class="button"  onclick="addToCart('Abingdon Upholstered chair', 151,'images/2.png')">Add to Cart</button>
+            </div>
+            <div class="product"  data-id="3"> 
+            <img src="images/3.png" alt="chair2">
+            <p class="name">Jesses Minimore Modern Style</p>
+            <p class="price">181</p>
+            <button class="button"onclick="addToCart('Jesses Minimore Modern Style', 181,'images/3.png')"   >Add to cart</button>
+            </div>
+            <div class="product" data-id="4"> 
+            <img src="images/4.png" alt="chair3">
+            <p class="name">JJeses Minimore Modern Style</p>
+            <p class="price">204</p>
+            <button class="button"  onclick="addToCart('JJeses Minimore Modern Style', 204,'images/4.png')">Add to Cart</button>
+            </div>
+            <div class="product" data-id="5" > 
+            <img src="images/5.png" alt="chair4">
+            <p class="name">Bolanle Upholstered Armchair</p>
+            <p class="price">252</p>
+            <button class="button" onclick="addToCart('Bolanle Upholstered Armchair', 252,'images/5.png')">Add to Cart</button>
+            </div>
+            <div class="product" data-id="6" >  
+            <img src="images/6.png" alt="chair5">
+            <p class="name">Jaqueze Upholstered Armchair</p>
+            <p class="price">450</p>
+            <button class="button" onclick="addToCart('Jaqueze Upholstered Armchair', 450,'images/6.png')" >Add to Cart</button>
+            </div>
+            <div class="product" data-id="7" >      
+            <img src="images/7.png" alt="chair6">
+            <p class="name">Leston wide Upholstered</p>
+            <p class="price">121</p>
+            <button class="button"onclick="addToCart('Leston wide Upholstered ', 121,'images/7.png')">Add to Cart</button>
+            </div>
+            <div class="product" data-id="8" >    
+            <img src="images/8.png" alt="chair7">
+            <p class="name">Stephanny Wide Tufted</p>
+            <p class="price">220</p>
+            <button class="button"  onclick="addToCart('Stephanny Wide Tufted', 220,'images/8.png')" >Add to Cart</button>
+            </div>
+             
+             
+        </div>
+        </div>
+
+    </div>
+    <div class="rigt-width">
+
+        <div class="Cart">   
+         
+            <h2>🛍️Your Cart</h2>
+            <ul id="cart"></ul>
+
+            <div id="cart-items">
+
+            </div>
+            <p class="total" id="total">Total:$0</p> 
+
+           
+        </div>
+       
+      
+    </div>
+
+   
+</div>
+  
+</body>
+<link rel="stylesheet" href="style.css">
+</html>
